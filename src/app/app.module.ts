@@ -8,15 +8,19 @@ import {
   MdSidenavModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
+import { APP_ROUTES } from './routes';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    SplashComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -25,7 +29,8 @@ import { NavComponent } from './nav/nav.component';
     HttpModule,
     MaterialModule,
     MdMenuModule,
-    MdSidenavModule
+    MdSidenavModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

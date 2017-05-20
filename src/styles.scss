@@ -1,1 +1,23 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// colors
+
+$lc-primary: #689112;
+$lc-secondary: hotpink;
+$lc-text-primary: #333;
+$lc-text-alt: #fff;
+
+
+// type properties
+
+$lt-header-family: 'Barrio', sans-serif;
+$lt-h1-size: 2.4em;
+$lt-h2-size: 1.6em;

@@ -1,5 +1,11 @@
-md-sidenav {
-  max-width: 200px;
-  display: flex;
-  overflow: visible;
+@import '../../styles';
+
+.l-sidenav-open {
+    color: $lc-text-primary;
+}
+
+.l-sidenav {
+    height: 100vh;
+    padding: 1em;
+    z-index: 100;
 }
