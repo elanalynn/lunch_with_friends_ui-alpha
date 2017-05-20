@@ -15,12 +15,18 @@ import { APP_ROUTES } from './routes';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { SplashComponent } from './splash/splash.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SplashComponent,
+    UsersListComponent,
+    UserDetailComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserAnimationsModule,
