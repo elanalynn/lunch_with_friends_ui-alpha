@@ -1,3 +1,31 @@
-<p>
-  user-detail works!
-</p>
+<md-card class="l-card">
+  <h1>Hello {{firstname}}</h1>
+  <div *ngIf="preferences;then preferences else nopreferences"></div>
+  <ng-template #preferences>
+    <p>Are your preferences up-to-date?</p>
+    <h4>In Office Days</h4>
+    <form>
+      <ul class="days">
+        <li>M<input type="checkbox" name="monday"></li>
+        <li>T<input type="checkbox" name="tuesday"></li>
+        <li>W<input type="checkbox" name="wednesday"></li>
+        <li>T<input type="checkbox" name="thirsday"></li>
+        <li>F<input type="checkbox" name="friday"></li>
+      </ul>
+    </form>
+
+    <h4>Lunch Spots</h4>
+    <p *ngIf="!lunchSpots">You don't have any Lunch Spots!</p>
+    <a href="#">Add a Lunch Spot</a>
+    <h4>No Goes</h4>
+    <ul>
+      <li *ngFor="let ng of noGoes">
+        {{ng.name}}
+      </li>
+    </ul>
+    <a href="#">Review All Lunch Spots</a>
+  </ng-template>
+  <ng-template #nopreferences>Set your preferences</ng-template>
+  
+
+</md-card>

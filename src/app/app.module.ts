@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
+import { AuthService } from './shared/auth.service';
+
 import { APP_ROUTES } from './routes';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -38,7 +40,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MdSidenavModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

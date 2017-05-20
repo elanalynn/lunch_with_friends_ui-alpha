@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-detail.component.scss']
 })
 export class UserDetailComponent implements OnInit {
+  firstname = 'Elana';
+  noGoes = [
+    { name: 'blargerlala'}
+  ];
 
   constructor() { }
 

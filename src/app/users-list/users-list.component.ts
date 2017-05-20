@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users-list.component.scss']
 })
 export class UsersListComponent implements OnInit {
+  users = [
+    { name: 'Shad' },
+    { name: 'Viral' }
+  ];
 
   constructor() { }
 

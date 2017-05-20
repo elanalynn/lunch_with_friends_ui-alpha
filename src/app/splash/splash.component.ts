@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { AuthService } from '../shared/auth.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-splash',
@@ -8,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class SplashComponent implements OnInit {
   title = 'Lench!';
   subtitle = 'A Lunch App for Lenny';
+  authEndpoint = `${environment.apiBaseUrl}/auth/google`;
 
   constructor() { }
 
