@@ -1,8 +1,8 @@
 import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { environment } from '../../environments/environment';
-import { IUser } from './user.model';
+import { environment } from '../../../environments/environment';
+import { IUser } from '../user.model';
 
 @Injectable()
 export class AuthService {
@@ -11,7 +11,7 @@ export class AuthService {
 
     constructor(private http: Http) { }
 
-    // signin(): Observable<IUser> {
+    // signin(): Observable<IUser {
     //   console.log(this.authEndpoint);
     //     return this.http.get(this.authEndpoint)
     //     .map(user => {

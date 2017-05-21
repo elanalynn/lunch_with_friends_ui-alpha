@@ -1,5 +1,5 @@
-// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Barrio&Roboto');
 
 // colors
 
@@ -12,6 +12,7 @@ $lc-bg: #f8fcf7;
 // type properties
 
 $lt-header-family: 'Barrio', sans-serif;
+$lt-main-family: 'Roboto', sans-serif;
 $lt-h1-size: 2.4em;
 $lt-h2-size: 1.6em;
 

@@ -8,12 +8,14 @@ import {
   MdSidenavModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
-import { AuthService } from './shared/auth.service';
+// import { AuthService } from './shared/auth.service';
+import { UserService } from './shared/userService/user.service';
 
-import { APP_ROUTES } from './routes';
+
+import { AppRoutingModule } from './app-routing.module';
+// import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { SplashComponent } from './splash/splash.component';
@@ -31,17 +33,19 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule,
     MdMenuModule,
-    MdSidenavModule,
-    RouterModule.forRoot(APP_ROUTES)
+    MdSidenavModule
   ],
   providers: [
-    AuthService
+    // AuthService
+    // ActivatedRoute
+    UserService
   ],
   bootstrap: [AppComponent]
 })

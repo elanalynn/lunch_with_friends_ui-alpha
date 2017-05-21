@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { ActivatedRouteSnapshot } from '@angular/router';
+import { UserService } from '../shared/userService/user.service';
 
 @Component({
   selector: 'app-user-detail',
@@ -6,14 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-detail.component.scss']
 })
 export class UserDetailComponent implements OnInit {
-  firstname = 'Elana';
+  firstName = 'Elana';
   noGoes = [
     { name: 'blargerlala'}
   ];
 
-  constructor() { }
+  constructor(
+    // private route: ActivatedRouteSnapshot,
+    private userSvc: UserService
+    ) { }
 
   ngOnInit() {
+    this.userSvc.getUser(2352352)
+      .subscribe(user => {
+        console.log(user);
+      });
   }
 
 }
