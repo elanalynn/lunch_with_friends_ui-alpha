@@ -19,6 +19,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SigninComponent } from './signin/signin.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { SigninComponent } from './signin/signin.component';
     UsersListComponent,
     UserDetailComponent,
     SigninComponent,
+    AboutComponent,
   ],
   imports: [
     AppRoutingModule,

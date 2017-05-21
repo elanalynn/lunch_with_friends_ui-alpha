@@ -22,4 +22,17 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: $lc-secondary;
+    font-family: $lt-main-family;
+}
+
+main {
+    margin-top: 56px;
+    width: 100%;
+    min-height: 90%;
+}
+
+.l-card {
+    background: $lc-bg;
+    margin: 5em 1em;
+    min-height: 90%;
 }
