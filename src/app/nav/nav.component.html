@@ -1,16 +1,25 @@
-<md-sidenav-container color="primary" class="l-container">
-  <md-sidenav #sidenav class="l-sidenav">
-    <ul>
-      <li><i class="material-icons">people</i>Friends</li>
-      <li><i class="material-icons">restaurant</i>Lunch Spots</li>
-      <li><i class="material-icons">preferences</i>Preferences</li>
-    </ul>
+<md-sidenav-container fullscreen class="l-sidenav-container">
+  <md-sidenav #sidenav mode="over" class="l-sidenav">
+    <md-toolbar class="l-sidenav-content">
+      <md-toolbar-row class="l-menu-item">
+        <md-icon class="l-menu-icon">info</md-icon>About
+      </md-toolbar-row>
+      <md-toolbar-row *ngIf="user" class="l-menu-item">
+        <md-icon class="l-menu-icon">people</md-icon>Friends
+      </md-toolbar-row>
+      <md-toolbar-row *ngIf="user" class="l-menu-item">
+        <md-icon class="l-menu-icon">restaurant</md-icon>Spots
+      </md-toolbar-row>
+      <md-toolbar-row *ngIf="user" class="l-menu-item">
+        <md-icon class="l-menu-icon">person</md-icon>Preferences
+      </md-toolbar-row>
+    </md-toolbar>
   </md-sidenav>
-
-  <div class="l-sidenav-content">
-    <button md-button (click)="sidenav.open()">
-      <i class="material-icons l-sidenav-open">menu</i>
+  <md-toolbar class="l-toolbar">
+    <button md-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
     </button>
-  </div>
+    <span class="title">Lench!</span>
+  </md-toolbar>
 
 </md-sidenav-container>
