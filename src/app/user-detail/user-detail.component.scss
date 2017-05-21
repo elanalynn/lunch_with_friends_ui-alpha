@@ -6,6 +6,12 @@
     flex-direction: column;
 }
 
+.l-card {
+    background: $lc-bg;
+    margin: 5em 1em;
+    flex: 1;
+}
+
 h1, .center-text {
     text-align: center;
 }

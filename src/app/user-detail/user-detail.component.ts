@@ -8,6 +8,9 @@ import { UserService } from '../shared/userService/user.service';
   styleUrls: ['./user-detail.component.scss']
 })
 export class UserDetailComponent implements OnInit {
+  user = {
+    id: 1
+  };
   firstName: string;
   lastName: string;
 

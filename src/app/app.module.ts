@@ -20,6 +20,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SigninComponent } from './signin/signin.component';
 import { AboutComponent } from './about/about.component';
+import { SpotsListComponent } from './spots-list/spots-list.component';
+import { SpotDetailComponent } from './spot-detail/spot-detail.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { AboutComponent } from './about/about.component';
     UserDetailComponent,
     SigninComponent,
     AboutComponent,
+    SpotsListComponent,
+    SpotDetailComponent,
   ],
   imports: [
     AppRoutingModule,

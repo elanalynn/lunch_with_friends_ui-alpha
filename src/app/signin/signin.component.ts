@@ -10,6 +10,7 @@ import { environment } from '../../environments/environment';
 export class SigninComponent implements OnInit {
   // authEndpoint = `${environment.apiBaseUrl}/auth/google`;
   authEndpoint = `http://localhost:3000/auth/google`;
+  user = false;
 
   constructor() { }
 
