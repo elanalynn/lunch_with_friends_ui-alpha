@@ -1,17 +1,9 @@
 @import '../../styles';
 
-:host {
-    height: 92%;
-    display: flex;
-    flex-direction: column;
-}
+#about {
+    padding: 2em 1em;
 
-.l-card {
-    background: $lc-bg;
-    margin: 5em 1em;
-    flex: 1;
-}
-
-p {
-    line-height: 1.4em;
+    p {
+        line-height: 1.4em;
+    }
 }

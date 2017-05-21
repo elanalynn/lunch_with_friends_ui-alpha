@@ -6,7 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
-// import { AuthService } from './shared/auth.service';
+// import { AuthService } from './shared/authService/auth.service';
 import { UserService } from './shared/userService/user.service';
 
 
@@ -46,7 +46,7 @@ import { SpotDetailComponent } from './spot-detail/spot-detail.component';
     MaterialModule
   ],
   providers: [
-    // AuthService
+    // AuthService,
     // ActivatedRoute
     UserService
   ],
