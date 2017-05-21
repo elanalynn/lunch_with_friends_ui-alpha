@@ -10,7 +10,8 @@ export class UserService {
   constructor(private http: Http) { }
 
   getUser(id: number) {
-    const userDetailUrl = `${environment.apiBaseUrl}/users/${id}`;
+    // const userDetailUrl = `${environment.apiBaseUrl}/users/${id}`;
+    const userDetailUrl = `http://localhost:3000/users/${id}`;
     return this.http.get(userDetailUrl);
   }
 }
