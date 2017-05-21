@@ -8,9 +8,11 @@ import { UserService } from '../shared/userService/user.service';
   styleUrls: ['./user-detail.component.scss']
 })
 export class UserDetailComponent implements OnInit {
-  firstName = 'Elana';
+  firstName: string;
+  lastName: string;
+
   noGoes = [
-    { name: 'blargerlala'}
+    { name: 'Dominoes'}
   ];
 
   constructor(
@@ -21,8 +23,8 @@ export class UserDetailComponent implements OnInit {
   ngOnInit() {
     this.userSvc.getUser(2352352)
       .subscribe(user => {
-        console.log(user);
-      });
+        this.firstName =
+          user.first_name.charAt(0).toUpperCase() + user.first_name.slice(1);
+    });
   }
-
 }

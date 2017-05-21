@@ -4,7 +4,7 @@
 // colors
 
 $lc-primary: #689112;
-$lc-secondary: hotpink;
+$lc-secondary: #ecf7e6;
 $lc-text-primary: #333;
 $lc-text-alt: #fff;
 $lc-bg: #f8fcf7;
@@ -21,5 +21,5 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: $lc-primary;
+    background-color: $lc-secondary;
 }

@@ -2,7 +2,11 @@
   <h1>Hello {{firstName}}</h1>
   <div *ngIf="preferences;then preferences else nopreferences"></div>
   <ng-template #preferences>
-    <p>Are your preferences up-to-date?</p>
+    <p class="center-text">Are your preferences up-to-date?</p>
+    <h4>Groups</h4>
+    <p *ngIf="!groups">You don't have any Groups!</p>
+    <a href="#"><p>Join a Group</p></a>
+    <a href="#"><p>Create a Group</p></a>
     <h4>In Office Days</h4>
     <form>
       <ul class="days">

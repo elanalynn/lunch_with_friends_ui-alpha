@@ -7,11 +7,12 @@
     background-size: auto 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 header {
+    margin-top: 20%;
     text-align: center;
     font-family: $lt-header-family;
 }
@@ -24,10 +25,4 @@ h1 {
 h2 {
     color: $lc-text-primary;
     font-size: $lt-h2-size
-}
-
-#google {
-    width: 191px;
-    height: 46px;
-    background: url('../../assets/google/btn_google_signin_dark_normal_web.png')
 }

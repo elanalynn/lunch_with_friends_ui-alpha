@@ -2,11 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {
-  MaterialModule,
-  MdMenuModule,
-  MdSidenavModule
-} from '@angular/material';
+import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
@@ -22,15 +18,18 @@ import { SplashComponent } from './splash/splash.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SigninComponent } from './signin/signin.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
+    PageNotFoundComponent,
     SplashComponent,
     UsersListComponent,
     UserDetailComponent,
-    PageNotFoundComponent,
+    SigninComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -38,9 +37,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
-    MdMenuModule,
-    MdSidenavModule
+    MaterialModule
   ],
   providers: [
     // AuthService

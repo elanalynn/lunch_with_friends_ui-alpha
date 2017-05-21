@@ -12,8 +12,12 @@
     flex: 1;
 }
 
-h1, p {
+h1, .center-text {
     text-align: center;
+}
+
+h4 {
+    color: $lc-primary;
 }
 
 ul.days {
