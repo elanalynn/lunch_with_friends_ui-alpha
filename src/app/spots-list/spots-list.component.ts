@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpotsListComponent implements OnInit {
 
+  spots = [
+    { name: 'Swing Thai'},
+    { name: 'Thai Pot' }
+  ];
+
   constructor() { }
 
   ngOnInit() {

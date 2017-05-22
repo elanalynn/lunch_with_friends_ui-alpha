@@ -1,7 +1,6 @@
 <article id="spots">
-  <ul>
-    <li>Swing Thai</li>
-    <li>Thai Pot</li>
-  </ul>
-  <a [routerLink]="['spots-search']">Search for More Spots</a>
+  <h2>All Community Spots</h2>
+  <md-list>
+    <md-list-item *ngFor="let spot of spots" class="l-spot-list-item">{{spot.name}}</md-list-item>
+  </md-list>
 </article>
