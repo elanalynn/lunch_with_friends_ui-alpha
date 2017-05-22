@@ -2,6 +2,14 @@
 
 ## A Lunch app for Lenny
 
+Lench is a lunch app for humans who work together and eat together. It allows individuals to set their preferences, bring local restaurants into the app directory from the Google Places API and mark Spots as _favorites_ or _no goes_.
+
+This app is not just for Lennies. 
+
+![Screenshot](./src/assets/lench_screenshot.png)
+
+## More about the project 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
 ## Development server
