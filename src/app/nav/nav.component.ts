@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   user = true;
-  fullscreen = false;
 
   constructor() { }
 

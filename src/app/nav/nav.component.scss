@@ -1,12 +1,11 @@
 @import '../../styles';
 
 .l-sidenav-container {
-    background: inherit;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .l-toolbar {
@@ -17,6 +16,11 @@
         position: absolute;
         right: 50px;
     }
+}
+
+.l-sidenav {
+    width: 240px;
+    background-color: $lc-primary;
 }
 
 .l-menu-item {
@@ -32,7 +36,9 @@
     background-color: inherit;
 }
 
-.l-sidenav {
-    width: 240px;
-    background-color: $lc-primary;
+main {
+    width: 100%;
+    height: 100%;
 }
+
+

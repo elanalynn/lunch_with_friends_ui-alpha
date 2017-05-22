@@ -19,9 +19,12 @@
     </md-toolbar>
   </md-sidenav>
   <md-toolbar class="l-toolbar">
-    <button md-button (click)="sidenav.toggle()">
+    <button md-button (click)="sidenav.toggle()" (click)="sidenavHeight()">
       <md-icon>menu</md-icon>
     </button>
     <span class="title">Lench!</span>
   </md-toolbar>
+  <main>
+      <router-outlet></router-outlet>
+  </main>
 </md-sidenav-container>
