@@ -12,30 +12,32 @@ import { UserService } from './shared/userService/user.service';
 
 import { AppRoutingModule } from './app-routing.module';
 // import { ActivatedRoute } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { SplashComponent } from './splash/splash.component';
-import { UsersListComponent } from './users-list/users-list.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SigninComponent } from './signin/signin.component';
-import { AboutComponent } from './about/about.component';
-import { SpotsListComponent } from './spots-list/spots-list.component';
+import { SplashComponent } from './splash/splash.component';
 import { SpotDetailComponent } from './spot-detail/spot-detail.component';
+import { SpotsListComponent } from './spots-list/spots-list.component';
+import { SpotsSearchComponent } from './spots-search/spots-search.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 
 @NgModule({
   declarations: [
+    AboutComponent,
     AppComponent,
     NavComponent,
     PageNotFoundComponent,
     SplashComponent,
-    UsersListComponent,
-    UserDetailComponent,
     SigninComponent,
-    AboutComponent,
-    SpotsListComponent,
     SpotDetailComponent,
+    SpotsListComponent,
+    SpotsSearchComponent,
+    UserDetailComponent,
+    UsersListComponent
   ],
   imports: [
     AppRoutingModule,
