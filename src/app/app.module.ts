@@ -23,6 +23,7 @@ import { SpotsListComponent } from './spots-list/spots-list.component';
 import { SpotsSearchComponent } from './spots-search/spots-search.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UsersListComponent } from './users-list/users-list.component';
+import { DevelopersComponent } from './developers/developers.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { UsersListComponent } from './users-list/users-list.component';
     SpotsListComponent,
     SpotsSearchComponent,
     UserDetailComponent,
-    UsersListComponent
+    UsersListComponent,
+    DevelopersComponent
   ],
   imports: [
     AppRoutingModule,

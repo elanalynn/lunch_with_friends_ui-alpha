@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { DevelopersComponent } from './developers/developers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SplashComponent } from './splash/splash.component';
 import { SpotDetailComponent } from './spot-detail/spot-detail.component';
@@ -11,6 +12,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 export const APP_ROUTES: Routes = [
     { path: '', component: SplashComponent },
     { path: 'about', component: AboutComponent },
+    { path: 'developers', component: DevelopersComponent },
     { path: 'spots', component: SpotsListComponent },
     { path: 'spots/search', component: SpotsSearchComponent },
     { path: 'spots/:id', component: SpotDetailComponent },
