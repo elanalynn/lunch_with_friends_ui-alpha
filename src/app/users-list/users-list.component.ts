@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersListComponent implements OnInit {
   users = [
-    { name: 'Shad' },
-    { name: 'Viral' }
+    { firstName: 'Shad', lastName: 'Self' },
+    { firstName: 'Viral', lastName: 'Shah'}
   ];
 
   constructor() { }
