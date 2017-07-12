@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "repository": "git@github.com:elanalynn/lench_ui.git",
+  "engines": {
+    "node": "6.11.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
