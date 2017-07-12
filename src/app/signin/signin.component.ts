@@ -8,8 +8,8 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit {
-  // authEndpoint = `${environment.apiBaseUrl}/auth/google`;
-  authEndpoint = `http://localhost:3000/auth/google`;
+  authEndpoint = `${environment.apiBaseUrl}/auth/google`;
+  // authEndpoint = `http://localhost:3000/auth/google`;
   user = false;
 
   constructor() { }

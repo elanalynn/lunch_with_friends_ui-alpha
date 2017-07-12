@@ -11,8 +11,8 @@ export class UserService {
 
   getUser(id: number) {
     console.log(id);
-    // const userDetailUrl = `${environment.apiBaseUrl}/users/${id}`;
-    const userDetailUrl = `http://localhost:3000/users/${id}`;
+    const userDetailUrl = `${environment.apiBaseUrl}/users/${id}`;
+    // const userDetailUrl = `http://localhost:3000/users/${id}`;
     console.log(userDetailUrl);
     return this.http.get(userDetailUrl).map(response => {
       return response.json().data[0].attributes;

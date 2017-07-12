@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./splash.component.scss']
 })
 export class SplashComponent implements OnInit {
-  title = 'Lench!';
-  subtitle = 'A Lunch App for Lenny';
+  title = 'Lench';
+  subtitle = 'Stop worrying about what we\'re having for lunch.';
 
   constructor() { }
 
